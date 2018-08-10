@@ -1,5 +1,6 @@
 var Tree = function(val) {
     this.value = val;
+    this.parent = null
     this.children = [];
 }
 
