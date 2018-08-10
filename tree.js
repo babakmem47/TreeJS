@@ -1,6 +1,6 @@
+// https://www.youtube.com/watch?v=0OkHnESpt1k
 var Tree = function(val) {
     this.value = val;
-    this.parent = null
     this.children = [];
 }
 
