@@ -47,7 +47,9 @@ root.children[2].addChild(new Node('0/0/3'));   //Adding 0/0/3 to interface Giga
 root.children[2].addChild(new Node('0/0/4'));   //Adding 0/0/4 to interface GigabitEthernet         => interface GigabitEthernet0/0/4
 root.children[2].addChild(new Node('0/0/5'));   //Adding 0/0/5 to interface GigabitEthernet         => interface GigabitEthernet0/0/5
 console.log(root.children[2]);
-
+var childOfEth0 = root.children[2].children[0].getChildren();  //=> childOfEth0[0].value: 116
+var tunnel =  root.children[1];
+tunnel.addChild(new Node('100'));
 // var children = root.getChildren();
 // for(var i = 0; i < children.length; i++) {
 //     for(var j = 0; j < 5; j++) {
